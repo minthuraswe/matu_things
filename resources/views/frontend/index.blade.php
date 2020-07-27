@@ -19,10 +19,10 @@
             <h2 class="mb-3">Our Products</h2>
             <div class="row">
                 @foreach ($category as $get)
-                <div class="col-md-6 mb-4">
-                    <div class="card">
+                <div class="col-md-12 px-1">
+                    <div class="card mb-2">
                         <div class="view overlay">
-                            <img src="{{asset('/uploads/' .$get->cat_image)}}" class="w-100 rounded" style="max-height: 400px;">
+                            <img src="{{asset('/uploads/' .$get->cat_image)}}" class="w-100 rounded" style="max-height: 550px;">
                             <div class="mask flex-center rgba-pink-strong rounded">
                                 <?php $replacingname = str_replace(' ', '-', $get->cat_name) ?>
                                 <a href="/products/{{$get->id}}/{{$replacingname}}"><h3 class="white-text ">{{$get->cat_name}}</h3></a>
@@ -32,6 +32,14 @@
                 </div>
                 @endforeach
             </div>
+            <a href="/products">
+                <h5 class="mt-3 text-right">more products
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+                    </svg>
+                </h5>
+            </a>
         </div>
     </section>
 
@@ -39,11 +47,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <h2 class="mb-2">Gallery</h2>
+                    <h2 class="mb-3">Gallery</h2>
                     <div class="row">
                         @foreach ($gallery as $get)
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
+                        <div class="col-md-4 px-1">
+                            <div class="card mb-2">
                                 <div class="view overlay">
                                     <img src="{{asset('/uploads/' .$get->pd_image)}}" class="w-100 rounded" style="max-height: 200px;">
                                     <div class="mask rgba-pink-strong rounded">
@@ -59,6 +67,14 @@
                         </div>
                         @endforeach
                     </div>
+                    <a href="/gallery">
+                        <h5 class="mt-3 text-right">view more
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+                            </svg>
+                        </h5>
+                    </a>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <div class="text-center">
                     <p>Copyright 2020 Matu Things. All Rights Reserved. </p>
-                    <p class="mb-0">Designed By Blur Blur.</p>
+                    <p class="mb-0">Designed By PoT.</p>
                 </div>
             </div>
         </div>

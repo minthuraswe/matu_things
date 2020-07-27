@@ -11,7 +11,7 @@ class HomeController extends Controller
 {
     public function index(){
         $gallery = Product::inRandomOrder()->limit(9)->get();
-        $category = Category::inRandomOrder()->limit(4)->get();
+        $category = Category::inRandomOrder()->limit(1)->get();
         return view('frontend.index', compact('category', 'gallery'));
     }
 

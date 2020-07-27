@@ -31,5 +31,7 @@ Route::group(['namespace'=>'Backend', 'middleware'=> 'auth'], function(){
 Route::group(['namespace' => 'Frontend'], function(){
     Route::get('/', 'HomeController@index');
     Route::get('/products', 'ProductController@index');
+    Route::get('/gallery', 'ImageController@index');
+    Route::get('/contact', 'ContactController@index');
     Route::get('/products/{id}/{name}', 'ProductController@categoryProduct');
 });

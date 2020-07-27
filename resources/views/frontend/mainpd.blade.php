@@ -15,7 +15,7 @@
         <div class="container">
             <div class="row">
                 @foreach ($product as $get)
-                <div class="col-md-6 pr-1 pl-1">
+                <div class="col-md-6 px-1">
                     <div class="card mb-2">
                         <div class="view overlay">
                             <img src="{{asset('/uploads/' .$get->cat_image)}}" class="w-100 rounded" style="max-height: 400px;">

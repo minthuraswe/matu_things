@@ -13,7 +13,7 @@
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     
-                    <li class="nav-item dropdown mr-4 {{(request()->is('products*')) ? 'active' : ''}}">
+                    <li class="nav-item dropdown mr-5 {{(request()->is('products*')) ? 'active' : ''}}">
                      
                         <a class="nav-link waves-effect waves-light" href="/products" >Products</a>
                         <span data-toggle="dropdown" class=" dropdown-toggle float-right btn p-1 my-dropdown"></span>
@@ -26,11 +26,11 @@
                             @endforeach
                         </div>
                     </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link" href="#">Gallery</a>
+                    <li class="nav-item mr-4 {{(request()->is('gallery')) ? 'active' : ''}}">
+                        <a class="nav-link" href="/gallery">Gallery</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item {{(request()->is('contact')) ? 'active' : ''}}">
+                        <a class="nav-link" href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
