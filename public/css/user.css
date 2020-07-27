@@ -1,0 +1,53 @@
+/*customize class*/
+
+.nav-link {
+    font-size: 1.2rem!important;
+    padding-left: 12px!important;
+}
+
+.footer-link {
+    color: bisque;
+}
+
+.footer-link:hover {
+    color: #c94896;
+    text-decoration: none;
+}
+
+.my-width {
+    width: 70%;
+}
+
+.pt-5 {
+    padding-top: 4rem!important;
+}
+
+.pt-5 {
+    padding-bottom: 4rem!important;
+}
+
+.dropdown-item:hover {
+    background-color: #fce4ec !important;
+    color: #000!important;
+}
+
+.section-padding-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.active {
+    background-color: #880e4f!important;
+}
+
+.active>a {
+    color: #e0e0e0!important;
+}
+
+.my-dropdown {
+    position: absolute;
+    top: 0;
+    left: 79px;
+    right: -21px;
+    bottom: 0;
+}
